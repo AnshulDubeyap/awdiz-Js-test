@@ -145,10 +145,15 @@ arr11.some((element) => {
 //  Input 1: [1, 2, -3, 4]
 
 let arr12 = [1, 2, -3, 4];
+
 for (let i = 0; i < arr12.length; i++) {
   if (arr12[i] < 0) {
-    console.log(i); // output = 2
+    console.log(i);
     break;
+  }
+
+  if (i === arr12.length - 1) {
+    console.log(-1);
   }
 }
 
@@ -167,17 +172,48 @@ for (let i = 0; i < arr13.length; i++) {
 
 console.log(obj);
 
-//!
+//! Create an object grouping strings based on their length
 
-let arr14 = ["hi", "yes", "no", "maybe"];
-let obj = {};
-obj[1] = 0;
-obj[2] = 0;
-obj[3] = 0;
-obj[4] = 0;
+arr14 = ["hi", "yes", "no", "maybe"];
 
-for(let i = 0; i<arr14.length; i++)
-{
-  if(arr[i].length )
+//! Remove Duplicate
 
+let arr15 = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+let removed = [];
+
+for (let i = 0; i < arr15.length; i++) {
+  let flag = false;
+  for (let j = 0; j < removed.length; j++) {
+    if (arr15[i] === removed[j]) {
+      flag = true;
+      break;
+    }
+  }
+  if (!flag) {
+    removed.push(arr15[i]);
+  }
+}
+console.log(removed);
+
+//! Find the Longest Word
+
+arr15 = ["hi", "hello", "goodbye"];
+
+for (let i = 0; i < arr15.length; i++) {
+  let longest = arr15[0];
+  if (arr15[i].length > longest.length) {
+    longest = arr15[i];
+  }
+  console.log(longest);
+}
+
+//! Flatten the nested array
+
+let arr16 = [
+  [1, 2],
+  [3, 4],
+];
+
+for(let i = 0; i<arr16.length; i++){
+  
 }
