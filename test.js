@@ -53,7 +53,11 @@ console.log(obj1); // output = { A: 1, B: 1, C: 0, D: 1, F: 1 }
 let arr3 = [1, 2, 3, 4];
 
 let result = arr3.every((element) => {
-  return element > 0;
+  if (element > 0) {
+    return true;
+  } else {
+    return false;
+  }
 });
 console.log(result); // output = true
 
@@ -160,10 +164,6 @@ for (let i = 0; i < arr12.length; i++) {
 //! Create an object grouping strings based on their length
 
 arr18 = ["hi", "yes", "no", "maybe"];
-
-
-
-
 
 //! Remove Duplicate
 
