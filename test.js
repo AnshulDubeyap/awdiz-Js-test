@@ -70,4 +70,106 @@ for (let i = 0; i < arr4.length; i++) {
 
 //! Check if a year is a leap year (divisible by 4 but not 100, unless divisible by 400)
 
-let 
+let year = 2024;
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  console.log("Leap year");
+} else {
+  console.log("Not a leap year");
+}
+
+//! Using `map()`, return a new array where every number is multiplied by 2
+
+let arr5 = [1, 2, 3, 4];
+
+let result1 = arr5.map((element) => {
+  return element * 2;
+});
+console.log(result1); // output = [2, 4, 6, 8]
+
+//! Return a new array with only the odd numbers using `filter()`
+
+let arr6 = [1, 2, 3, 4, 5];
+
+let filtered = arr6.filter((element) => {
+  if (element % 2 !== 0) {
+    return element;
+  }
+});
+
+console.log(filtered); // output = [1, 3, 5]
+
+// !Return the total number of characters in an array of strings using `reduce()`
+
+let arr7 = ["hi", "world"];
+
+let ch = arr7.reduce((acc, res) => {
+  return acc + res.length;
+});
+
+console.log(ch);
+
+//! Return the last 3 items in the array using `slice()`
+
+let arr8 = [1, 2, 3, 4, 5];
+
+console.log(arr8.slice(2, 5)); // output = 3, 4, 5
+
+//! use`splice()` to remove the element at index 2.
+
+let arr9 = [1, 2, 3, 4, 5];
+arr9.splice(2, 1);
+console.log(arr9); // output = [1, 2, 4, 5]
+
+//! Return a new array where each word starts with an uppercase letter.
+
+// let arr10 = ["hello", "world"];
+// let resultarr = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   let str = arr[i];
+// }
+
+// console.log(resultarr);
+
+//! Use `some()` to check if at least one number in the array is divisible by 5.
+
+let arr11 = [3, 6, 10, 14];
+
+arr11.some((element) => {
+  if (element % 5 === 0) {
+    console.log(true);
+  }
+});
+
+//! Return the index of the first negative number, or -1 if none found.
+//  Input 1: [1, 2, -3, 4]
+
+let arr12 = [1, 2, -3, 4];
+for (let i = 0; i < arr12.length; i++) {
+  if (arr12[i] < 0) {
+    console.log(i); // output = 2
+    break;
+  }
+}
+
+//! Return an object where the keys are words and values are how many times each appears
+
+let arr13 = ["apple", "banana", "apple"];
+obj = {};
+
+for (let i = 0; i < arr13.length; i++) {
+  if (obj[arr13[i]]) {
+    obj[arr13[i]]++;
+  } else {
+    obj[arr13[i]] = 1;
+  }
+}
+
+console.log(obj);
+
+//!
+
+let arr14 = ["hi", "yes", "no", "maybe"];
+let obj = {};
+
+
