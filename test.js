@@ -122,14 +122,15 @@ console.log(arr9); // output = [1, 2, 4, 5]
 
 //! Return a new array where each word starts with an uppercase letter.
 
-// let arr10 = ["hello", "world"];
-// let resultarr = [];
+let arr10 = ["hi", "hello", "goodbye"];
+let result2 = [];
 
-// for (let i = 0; i < arr.length; i++) {
-//   let str = arr[i];
-// }
+for (let i = 0; i < arr10.length; i++) {
+  let word = arr10[i];
 
-// console.log(resultarr);
+  word = word[0].toUpperCase() + word.slice(1);
+  result2.push(word);
+}
 
 //! Use `some()` to check if at least one number in the array is divisible by 5.
 
@@ -142,7 +143,6 @@ arr11.some((element) => {
 });
 
 //! Return the index of the first negative number, or -1 if none found.
-//  Input 1: [1, 2, -3, 4]
 
 let arr12 = [1, 2, -3, 4];
 
@@ -174,7 +174,11 @@ console.log(obj);
 
 //! Create an object grouping strings based on their length
 
-arr14 = ["hi", "yes", "no", "maybe"];
+arr18 = ["hi", "yes", "no", "maybe"];
+
+
+
+
 
 //! Remove Duplicate
 
@@ -204,7 +208,7 @@ for (let i = 0; i < arr15.length; i++) {
   if (arr15[i].length > longest.length) {
     longest = arr15[i];
   }
-  console.log(longest);
+  console.log(longest); // output = goodbye
 }
 
 //! Flatten the nested array
@@ -214,6 +218,34 @@ let arr16 = [
   [3, 4],
 ];
 
-for(let i = 0; i<arr16.length; i++){
-  
+let flattened = [];
+
+for (let i = 0; i < arr16.length; i++) {
+  for (let j = 0; j < arr16.length; j++) {
+    flattened.push(arr16[i][j]);
+  }
 }
+
+console.log(flattened); // output = [1, 2, 3, 4]
+
+//! Count the data types in the Array
+
+let arr17 = [1, "hello", true, 2, "world", false];
+
+let obj2 = {
+  number: 0,
+  string: 0,
+  boolean: 0,
+};
+
+for (let i = 0; i < arr17.length; i++) {
+  if (typeof arr17[i] === "number") {
+    obj2.number++;
+  } else if (typeof arr17[i] === "string") {
+    obj2.string++;
+  } else if (typeof arr17[i] === "boolean") {
+    obj2.boolean++;
+  }
+}
+
+console.log(obj2); // output = { number: 2, string: 2, boolean: 2 }
