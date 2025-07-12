@@ -171,5 +171,13 @@ console.log(obj);
 
 let arr14 = ["hi", "yes", "no", "maybe"];
 let obj = {};
+obj[1] = 0;
+obj[2] = 0;
+obj[3] = 0;
+obj[4] = 0;
 
+for(let i = 0; i<arr14.length; i++)
+{
+  if(arr[i].length )
 
+}
