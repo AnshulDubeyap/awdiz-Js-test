@@ -157,21 +157,6 @@ for (let i = 0; i < arr12.length; i++) {
   }
 }
 
-//! Return an object where the keys are words and values are how many times each appears
-
-let arr13 = ["apple", "banana", "apple"];
-obj = {};
-
-for (let i = 0; i < arr13.length; i++) {
-  if (obj[arr13[i]]) {
-    obj[arr13[i]]++;
-  } else {
-    obj[arr13[i]] = 1;
-  }
-}
-
-console.log(obj);
-
 //! Create an object grouping strings based on their length
 
 arr18 = ["hi", "yes", "no", "maybe"];
