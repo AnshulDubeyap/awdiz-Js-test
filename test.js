@@ -163,7 +163,7 @@ for (let i = 0; i < arr12.length; i++) {
 
 //! Create an object grouping strings based on their length
 
-arr18 = ["hi", "yes", "no", "maybe"];
+let arr18 = ["hi", "yes", "no", "maybe"];
 
 //! Remove Duplicate
 
