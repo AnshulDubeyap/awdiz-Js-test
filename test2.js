@@ -221,9 +221,7 @@ let arr15 = [
 let sorted = [];
 let obj14 = {};
 
-for (let i = 0; i < arr15.length; i++) {
-  obj14[arr15[i].type] = obj14[arr15[i].name];
-  sorted.push(obj14);
-}
+obj14[arr15[0].type] = obj14.arr15[0].name;
+sorted.push(obj14);
 
 console.log(sorted);
