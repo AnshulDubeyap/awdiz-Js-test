@@ -1,19 +1,22 @@
 //! Print a Pyramid Pattern with Spaces
 
-// let num = 3;
+let n = 3;
 
-// for (let i = 0; i < num; i++) {
-//   let res = "";
-//   for (let j = 1; j <= i; j++) {
-//     let num2 = num - j;
-//     while (num2 >= 0) {
-//       res = res + " ";
-//     }
-//     res = res + "*";
-//   }
+for (let i = 1; i <= n; i++) {
+  let res = "";
 
-//   console.log(res);
-// }
+  // Print spaces
+  for (let j = 1; j <= n - i; j++) {
+    res += " ";
+  }
+
+  // Print stars
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    res += "*";
+  }
+
+  console.log(res);
+}
 
 //! Print a Square with Border Only
 let num2 = 4;
