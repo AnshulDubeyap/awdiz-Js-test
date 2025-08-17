@@ -89,7 +89,10 @@ for (let i = 0; i < array2.length; i++) {
       output2.push(array2[i], array2[j]);
     }
   }
-  output.push(output2);
+
+  if (output2.length > 0) {
+    output.push(output2);
+  }
 }
 
 console.log(output);
