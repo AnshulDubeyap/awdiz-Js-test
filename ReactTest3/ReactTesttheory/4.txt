@@ -1,0 +1,6 @@
+React Hooks rules are a set of guidelines that ensure Hooks work correctly and predictably within a React application. You need them because they maintain the stability of your application's state and behavior
+
+Only Call Hooks at the Top Level: Don't call Hooks inside loops, conditions, or nested functions
+
+Only Call Hooks from React Functions: Call Hooks from React functional components or custom Hooks, not from regular JavaScript functions
+

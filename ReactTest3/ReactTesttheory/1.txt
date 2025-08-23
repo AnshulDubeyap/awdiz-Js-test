@@ -1,0 +1,8 @@
+Controlled Components
+A controlled component gets its value from props and notifies changes via callbacks
+The parent component manages the state and passes it down to the form element
+
+
+Uncontrolled Components
+An uncontrolled component stores its own state internally, the states and variables defined in the component are handled within the component itself
+

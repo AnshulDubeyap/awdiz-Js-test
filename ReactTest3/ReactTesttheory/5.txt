@@ -1,0 +1,24 @@
+useMemo memoizes the result of a function call. It's used when you want to prevent an expensive or heavy calculation from re-running on every render
+
+useCallback memoizes a function itself. It's used to prevent a function from being re-created on every render
+
+
+--> Use Memo
+
+const ItemList = ({ items, filterText }) => {
+  const filteredItems = useMemo(() => {
+    console.log('Filtering items...');
+    return items.filter(item => item.name.includes(filterText));
+  }, [items, filterText]);
+
+  return (
+    <ul>
+      {filteredItems.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+};
+
+--> useCallback
+

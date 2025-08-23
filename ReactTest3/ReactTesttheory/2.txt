@@ -1,0 +1,4 @@
+What is the difference between React Context and Redux? When would you use one 
+over the other? 
+
+-->React Context provides a way to pass data through the component tree without having to manually pass props down at every level. It is best used for simple state management of data that is needed by many components, Redux is a separate, more robust library designed to handle complex application state which involves a single global store, a predictable state container, and a unidirectional data flow

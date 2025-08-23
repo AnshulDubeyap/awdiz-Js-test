@@ -1,0 +1,2 @@
+When your list changes (like you add a new item, delete one, or reorder them), React looks at the keys. It can quickly figure out, "Oh, this item with ID #3 moved from the top to the bottom,This is much faster than recreating the entire list from scratch
+
