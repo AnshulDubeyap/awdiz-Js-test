@@ -47,13 +47,17 @@ const Login = () => {
       <h1>Login Form</h1>
 
       <input
+        style={{ marginTop: "10px", height: "30px", width: "300px" }}
         type="text"
         placeholder="Username"
         onChange={handleChange}
         name="username"
         value={form.username}
       />
+
+      <br />
       <input
+        style={{ marginTop: "10px", height: "30px", width: "300px" }}
         type="password"
         placeholder="Password"
         onChange={handleChange}
@@ -61,8 +65,20 @@ const Login = () => {
         value={form.password}
       />
 
-      <button type="button" onClick={handleLogin}>
+      <br />
+
+      <button type="button" style={{ marginTop: "10px" }} onClick={handleLogin}>
         Login
+      </button>
+
+      <br />
+
+      <button
+        type="button"
+        style={{ marginTop: "10px" }}
+        onClick={() => navigate("/register")}
+      >
+        Register
       </button>
 
       {error && <p style={{ color: "red" }}>{error}</p>}

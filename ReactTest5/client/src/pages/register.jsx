@@ -59,6 +59,7 @@ const Register = () => {
       <br />
 
       <input
+        style={{ marginTop: "10px", height: "30px", width: "300px" }}
         type="text"
         placeholder="Username"
         onChange={handleChange}
@@ -69,6 +70,7 @@ const Register = () => {
 
       <br />
       <input
+        style={{ marginTop: "10px", height: "30px", width: "300px" }}
         type="password"
         placeholder="Password"
         onChange={handleChange}
@@ -79,6 +81,7 @@ const Register = () => {
 
       <br />
       <input
+        style={{ marginTop: "10px", height: "30px", width: "300px" }}
         type="password"
         placeholder="Confirm Password"
         onChange={handleChange}
@@ -90,8 +93,16 @@ const Register = () => {
       )}
 
       <br />
-      <button type="button" onClick={handleRegister}>
+      <button
+        type="button"
+        style={{ marginTop: "10px" }}
+        onClick={handleRegister}
+      >
         Register
+      </button>
+      <br />
+      <button style={{ marginTop: "10px" }} onClick={() => navigate("/login")}>
+        Login
       </button>
     </div>
   );
